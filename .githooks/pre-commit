@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "🧹 Checking formatting with Prettier..."
+npx prettier -c "**/*.md" "**/*.js" "**/*.ts"
+
+if [ $? -ne 0 ]; then
+  echo "❌ Prettier check failed. Please format your code before committing."
+  echo "   Run: npx prettier -w ."
+  exit 1
+fi
+
+echo "✅ Prettier formatting OK."
