@@ -1,0 +1,31 @@
+<aside class="sidebar">
+  {% if site.events %}
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        {% assign sorted_events = site.events | sort: 'date' %}
+        {% for event in sorted_events %}
+          <li>
+            <a href="{{ event.url | relative_url }}">{{ event.title }}</a>
+            {% if event.date %} – {{ event.date | date: "%b %d, %Y" }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if site.workshops %}
+    <section>
+      <h2>Workshops</h2>
+      <ul>
+        {% assign sorted_workshops = site.workshops | sort: 'date' %}
+        {% for workshop in sorted_workshops %}
+          <li>
+            <a href="{{ workshop.url | relative_url }}">{{ workshop.title }}</a>
+            {% if workshop.date %} – {{ workshop.date | date: "%b %d, %Y" }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+</aside>

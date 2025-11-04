@@ -1,8 +1,6 @@
 ---
 title: LISA Project
-layout: default
+layout: page
 ---
-
-# LISA Project
 
 Welcome to the LISA project page at Sirris.
