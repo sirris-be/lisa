@@ -1,0 +1,29 @@
+- name: Lieven Desmet
+  organization: KU Leuven - Distrinet
+  role: Professor
+  email: lieven.desmet@kuleuven.be
+
+- name: Pieter Philippaerts
+  organization: KU Leuven - Distrinet
+  role: Research Manager
+  email: pieter.philippaerts@kuleuven.be
+
+- name: Tim Van hamme
+  organization: KU Leuven - Distrinet
+  role: Researcher
+  email: tim.vanhamme@kuleuven.be
+
+- name: Thomas Vissers
+  organization: KU Leuven - Distrinet
+  role: Researcher
+  email: thomas.vissers@kuleuven.be
+
+- name: Nick Boucart
+  organization: Sirris
+  role: Senior Technical Advisor
+  email: nick.boucart@sirris.be
+
+- name: Laurent Christophe
+  organization: Sirris
+  role: Researcher
+  email: laurent.christophe@sirris.be

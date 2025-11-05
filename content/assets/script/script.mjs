@@ -1,5 +1,15 @@
 import events from "./events.json" with { type: "json" };
 
+{
+  const links = Array.from(document.querySelectorAll("nav ul a"));
+  for (const link of links) {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  }
+  console.log(links);
+}
+
 const toMidnightStamp = () => {
   const midnight = new Date();
   midnight.setHours(0, 0, 0, 0);
@@ -25,16 +35,15 @@ if (upcoming.length > 0) {
     document.getElementById("sidebar").appendChild(title);
   }
   {
-    const ol = document.createElement("ol");
+    const list = document.createElement("ul");
     for (const event of upcoming) {
-      console.log(event);
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.href = event.url;
-      a.textContent = `${formatDate(event.date)} - ${event.short_title}`;
-      li.appendChild(a);
-      ol.appendChild(li);
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = event.url;
+      link.textContent = `${formatDate(event.date)} - ${event.short_title}`;
+      item.appendChild(link);
+      list.appendChild(item);
     }
-    document.getElementById("sidebar").appendChild(ol);
+    document.getElementById("sidebar").appendChild(list);
   }
 }
