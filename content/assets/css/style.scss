@@ -1,0 +1,93 @@
+---
+---
+
+$light-purple: rgb(179, 119, 228);
+$middle-purple: rgba(111, 0, 201, 1);
+$dark-purple: rgba(43, 0, 78, 1);
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-image:
+    url("/assets/img/lisa-flip.png"),
+    linear-gradient(to top right, $light-purple, $dark-purple);
+  background-size: auto 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 2em; /* space between article and aside */
+}
+
+nav {
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+aside {
+  padding: 1em;
+  flex: 0 0 auto;
+  width: auto;
+}
+
+article {
+  flex: 1 1 auto;
+  min-width: 300px;
+  max-width: 800px;
+  overflow: scroll;
+}
+
+aside ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: left;
+}
+
+a {
+  display: inline-block;
+  padding: 0.4em 1.2em;
+  background: #fff;
+  color: black;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+a:hover,
+a.active {
+  background: $dark-purple;
+  color: #fff;
+}

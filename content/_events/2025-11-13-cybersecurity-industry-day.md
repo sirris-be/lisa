@@ -1,7 +1,8 @@
 ---
 title: Cybersecurity Industry Day
+short_title: Forum on Security
 layout: event
-date: 2025-11-03
+format: Forum
 venue:
   name: Lamot Conference and Heritage Center
   address: Van Beethovenstraat 8/10, 2800 Mechelen
