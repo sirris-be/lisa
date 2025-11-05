@@ -1,6 +1,8 @@
 ---
 ---
 
+$link-padding-x: 16px;
+$link-padding-y: 8px;
 $light-purple: rgb(179, 119, 228);
 $middle-purple: rgba(111, 0, 201, 1);
 $dark-purple: rgba(43, 0, 78, 1);
@@ -17,12 +19,11 @@ body {
   padding: 0px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 header {
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   background-image:
     url("/assets/img/lisa-flip.png"),
     linear-gradient(to top right, $light-purple, $dark-purple);
@@ -41,6 +42,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 2em; /* space between article and aside */
 }
 
@@ -62,6 +64,12 @@ nav ul {
   align-items: center;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 aside {
   padding: 1em;
   flex: 0 0 auto;
@@ -77,7 +85,7 @@ article {
 
 a {
   display: inline-block;
-  padding: 0.4em 1.2em;
+  padding: $link-padding-y $link-padding-x;
   background: #fff;
   color: black;
   border-radius: 999px;
@@ -92,4 +100,31 @@ a:hover,
 a.active {
   background: $dark-purple;
   color: #fff;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.person div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person div div {
+  padding: $link-padding-y $link-padding-x;
 }

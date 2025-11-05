@@ -1,29 +1,41 @@
 - name: Lieven Desmet
-  organization: KU Leuven - Distrinet
+  photo: /assets/img/people/lieven-desmet.jpg
+  org: KU Leuven - Distrinet
   role: Professor
   email: lieven.desmet@kuleuven.be
+  link: https://distrinet.cs.kuleuven.be/people/LievenDesmet
 
 - name: Pieter Philippaerts
-  organization: KU Leuven - Distrinet
+  photo: /assets/img/people/pieter-philippaerts.jpg
+  org: KU Leuven - Distrinet
   role: Research Manager
   email: pieter.philippaerts@kuleuven.be
+  link: https://distrinet.cs.kuleuven.be/people/PieterPhilippaerts
 
 - name: Tim Van hamme
-  organization: KU Leuven - Distrinet
+  photo: /assets/img/people/tim-van-hamme.jpg
+  org: KU Leuven - Distrinet
   role: Researcher
   email: tim.vanhamme@kuleuven.be
+  link: https://distrinet.cs.kuleuven.be/people/TimVanhamme
 
 - name: Thomas Vissers
-  organization: KU Leuven - Distrinet
+  photo: /assets/img/people/thomas-vissers.jpg
+  org: KU Leuven - Distrinet
   role: Researcher
   email: thomas.vissers@kuleuven.be
+  link: https://distrinet.cs.kuleuven.be/people/ThomasVissers
 
 - name: Nick Boucart
-  organization: Sirris
+  photo: /assets/img/people/nick-boucart.webp
+  org: Sirris
   role: Senior Technical Advisor
   email: nick.boucart@sirris.be
+  link: https://www.sirris.be/en/expert/nick-boucart
 
 - name: Laurent Christophe
-  organization: Sirris
+  photo: /assets/img/people/laurent-christophe.webp
+  org: Sirris
   role: Researcher
   email: laurent.christophe@sirris.be
+  link: https://www.sirris.be/en/expert/laurent-christophe

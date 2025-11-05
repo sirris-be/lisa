@@ -7,13 +7,13 @@ layout: page
 
 <ul>
   {% for person in site.data.people %}
-  <li>
-    <strong>{{ person.name }}</strong> - {{ person.role }}<br />
-    <a href="mailto:{{ person.email }}">{{ person.email }}</a><br />
-    {{ person.affiliation }}<br />
-    {% if person.bio %}
-    <p>{{ person.bio }}</p>
-    {% endif %}
+  <li class="person">
+    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+    <div>
+      <a href="{{ person.link }}">{{ person.name }}</a>
+      <div>{{ person.role }}</div>
+      <div>{{ person.org }}</div>
+    </div>
   </li>
   {% endfor %}
 </ul>
