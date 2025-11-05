@@ -40,7 +40,7 @@ if (upcoming.length > 0) {
       const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = event.url;
-      link.textContent = `${formatDate(event.date)} - ${event.short_title}`;
+      link.textContent = `\u2022\u00A0\u00A0\u00A0${formatDate(event.date)} - ${event.short_title}`;
       item.appendChild(link);
       list.appendChild(item);
     }
