@@ -7,8 +7,12 @@ import events from "./events.json" with { type: "json" };
       link.classList.add("active");
     }
   }
-  console.log(links);
 }
+
+const parseDate = (date_string) => {
+  const [date, time, zone] = date_string.split(" ");
+  return new Date(`${date}T${time}${zone}`);
+};
 
 const toMidnightStamp = () => {
   const midnight = new Date();
@@ -17,7 +21,7 @@ const toMidnightStamp = () => {
 };
 
 const formatDate = (date_string) => {
-  const date = new Date(date_string);
+  const date = parseDate(date_string);
   const yyyy = date.getFullYear();
   const mm = String(date.getMonth() + 1).padStart(2, "0");
   const dd = String(date.getDate()).padStart(2, "0");
@@ -26,7 +30,9 @@ const formatDate = (date_string) => {
 
 const today = toMidnightStamp(new Date());
 
-const upcoming = events.filter((event) => new Date(event.date) >= today);
+const upcoming = events.filter(
+  (event) => parseDate(event.date).getTime() >= today
+);
 
 if (upcoming.length > 0) {
   {
