@@ -12,6 +12,8 @@ source: content
 # Destination folder (where the static site is built)
 destination: _site
 
+timezone: Europe/Brussels
+
 # Layouts
 layouts_dir: _layouts
 includes_dir: _includes

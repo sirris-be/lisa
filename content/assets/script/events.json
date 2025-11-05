@@ -1,0 +1,12 @@
+---
+---
+
+[
+  {% for event in site.events %}
+    {
+      "short_title": {{ event.short_title | jsonify }},
+      "url": {{ event.url | jsonify }},
+      "date": {{ event.date | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

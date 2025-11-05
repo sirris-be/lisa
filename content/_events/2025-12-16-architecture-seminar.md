@@ -1,7 +1,7 @@
 ---
-title: Seminary on Architecture and Testability of AI Applications
+title: Seminar on Architecture and Testability of AI Applications
+short_title: Seminar on Testability
 layout: event
-date: 2025-11-03
 time: 13:00-14:00
 remote:
   name: Microsoft Teams

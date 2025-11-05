@@ -1,7 +1,7 @@
 ---
 title: Workshop on Security for AI Applications
+short_title: Workshop on Security
 layout: event
-date: 2025-11-03
 time: 13:30-17:00
 venue:
   name: Sirris' Leuven office
