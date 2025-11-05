@@ -35,21 +35,18 @@ const upcoming = events.filter(
 );
 
 if (upcoming.length > 0) {
+  const sidebar = document.getElementById("sidebar");
   {
     const title = document.createElement("h3");
     title.textContent = "Upcoming Events:";
-    document.getElementById("sidebar").appendChild(title);
+    sidebar.appendChild(title);
   }
   {
-    const list = document.createElement("ul");
     for (const event of upcoming) {
-      const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = event.url;
       link.textContent = `\u2022\u00A0\u00A0\u00A0${formatDate(event.date)} - ${event.short_title}`;
-      item.appendChild(link);
-      list.appendChild(item);
+      sidebar.appendChild(link);
     }
-    document.getElementById("sidebar").appendChild(list);
   }
 }
