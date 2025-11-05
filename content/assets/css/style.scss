@@ -5,6 +5,11 @@ $light-purple: rgb(179, 119, 228);
 $middle-purple: rgba(111, 0, 201, 1);
 $dark-purple: rgba(43, 0, 78, 1);
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -26,9 +31,15 @@ header {
   background-repeat: no-repeat;
 }
 
+footer {
+  flex: 0 0 auto;
+  height: 50px;
+}
+
 main {
   flex: 1 1 auto;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   gap: 2em; /* space between article and aside */
 }
@@ -36,6 +47,7 @@ main {
 nav {
   margin-right: 2em;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
@@ -61,16 +73,6 @@ article {
   min-width: 300px;
   max-width: 800px;
   overflow: scroll;
-}
-
-aside ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2em;
-  align-items: left;
 }
 
 a {
