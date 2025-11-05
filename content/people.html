@@ -5,15 +5,15 @@ layout: page
 
 <h1>The People Behind LISA</h1>
 
-<ul>
+<div class="people">
   {% for person in site.data.people %}
-  <li class="person">
+  <a class="person" href="{{ person.link }}" target="_blank">
     <img src="{{ person.photo }}" alt="{{ person.name }}" />
     <div>
-      <a href="{{ person.link }}">{{ person.name }}</a>
+      <div>{{ person.name }}</div>
       <div>{{ person.role }}</div>
       <div>{{ person.org }}</div>
     </div>
-  </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </a>
+</div>

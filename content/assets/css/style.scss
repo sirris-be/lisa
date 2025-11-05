@@ -1,15 +1,50 @@
 ---
 ---
 
-$link-padding-x: 16px;
-$link-padding-y: 8px;
 $light-purple: rgb(179, 119, 228);
 $middle-purple: rgba(111, 0, 201, 1);
 $dark-purple: rgba(43, 0, 78, 1);
 
+@mixin box {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fafaff;
+  box-shadow: 0 2px 8px rgba(43, 0, 78, 0.07);
+  padding: 16px 24px;
+}
+
+@mixin link-padding {
+  padding: 8px 16px;
+}
+
+@mixin clickable {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@mixin link {
+  @include link-padding;
+  background: #fff;
+  color: black;
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  // &.active {
+  //   background: $dark-purple;
+  //   color: #fff;
+  // }
+}
+
 html {
   width: 100%;
   height: 100%;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    sans-serif;
 }
 
 body {
@@ -89,21 +124,17 @@ article {
   flex: 1 1 auto;
   z-index: 10;
   min-width: 300px;
-  max-width: 800px;
+  max-width: 600px;
   overflow: scroll;
 }
 
 a {
+  @include link-padding;
   display: inline-block;
-  padding: $link-padding-y $link-padding-x;
   background: #fff;
   color: black;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: 500;
-  transition:
-    background 0.2s,
-    color 0.2s;
 }
 
 a:hover,
@@ -112,12 +143,17 @@ a.active {
   color: #fff;
 }
 
+////////////
+// Poeple //
+////////////
+
 .person {
+  @include box;
+  @include clickable;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 16px;
   align-items: center;
-  text-align: center;
   margin-bottom: 32px;
 }
 
@@ -126,15 +162,39 @@ a.active {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  vertical-align: middle;
-}
-
-.person div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .person div div {
-  padding: $link-padding-y $link-padding-x;
+  padding: 2px;
+}
+
+////////////////
+// Consortium //
+////////////////
+
+.consortium {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 32px;
+}
+
+.consortium a {
+  @include box;
+  @include clickable;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: top;
+}
+
+.consortium a img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.consortium a p {
+  margin: 0;
 }
