@@ -26,3 +26,11 @@ collections:
 
 # Markdown processor
 markdown: kramdown
+
+nav:
+  - title: LISA
+    url: /
+  - title: Events
+    url: /events/
+  - title: People
+    url: /people/
