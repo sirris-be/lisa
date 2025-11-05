@@ -22,6 +22,10 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex: none;
   width: 100%;
   min-height: 100px;
   background-image:
@@ -39,11 +43,11 @@ footer {
 
 main {
   flex: 1 1 auto;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2em; /* space between article and aside */
 }
 
 nav {
@@ -71,13 +75,19 @@ ul {
 }
 
 aside {
+  position: sticky;
+  z-index: 0;
+  top: 100px;
   padding: 1em;
   flex: 0 0 auto;
   width: auto;
 }
 
 article {
+  padding-left: 16px;
+  background-color: #fff;
   flex: 1 1 auto;
+  z-index: 10;
   min-width: 300px;
   max-width: 800px;
   overflow: scroll;
