@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Events
+layout: page
 ---
 
 {% for event in site.events %}

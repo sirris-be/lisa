@@ -1,5 +1,12 @@
 ---
-title: Workshop on Security for AI-based Applications
-date: 2025-11-03
+title: Workshop on Security for AI Applications
 layout: event
+date: 2025-11-03
+time: 13:30-17:00
+venue:
+  name: Sirris' Leuven office
+  address: Gaston Geenslaan 8, 3001 Leuven
+remote:
+  name: Microsoft Teams
+  link: https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjJlMzQzYTgtYjIwOC00N2ZkLTk5ZWMtOTIwNWM1YmI4Zjc3%40thread.v2/0?context=%7b%22Tid%22%3a%22d4c1d712-e8c2-4fdf-abce-18805891b5b0%22%2c%22Oid%22%3a%22b131c3f0-f2ad-4966-9bd8-2e41122d59c3%22%7d
 ---

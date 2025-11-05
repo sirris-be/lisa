@@ -1,5 +1,5 @@
 ---
-title: LISA Project
+title: LISA
 layout: page
 ---
 
