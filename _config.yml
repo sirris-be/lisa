@@ -1,4 +1,3 @@
-
 title: LISA
 email: laurent.christophe@sirris.be
 description: Homepage of the LISA Research Project
@@ -16,4 +15,5 @@ includes_dir: _includes
 
 collections:
   events:
+    permalink: /events/:name/
     output: true

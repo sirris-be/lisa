@@ -11,12 +11,18 @@ const toMidnightStamp = () => {
   return midnight.getTime();
 };
 
+// const formatDate = (date_string) => {
+//   const date = parseDate(date_string);
+//   const yyyy = date.getFullYear();
+//   const mm = String(date.getMonth() + 1).padStart(2, "0");
+//   const dd = String(date.getDate()).padStart(2, "0");
+//   return `${yyyy}-${mm}-${dd}`;
+// };
+
 const formatDate = (date_string) => {
   const date = parseDate(date_string);
-  const yyyy = date.getFullYear();
-  const mm = String(date.getMonth() + 1).padStart(2, "0");
-  const dd = String(date.getDate()).padStart(2, "0");
-  return `${yyyy}-${mm}-${dd}`;
+  const options = { month: "short", day: "numeric" };
+  return date.toLocaleDateString("en-US", options);
 };
 
 const today = toMidnightStamp(new Date());

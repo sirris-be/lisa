@@ -242,3 +242,11 @@ nav a {
   width: 100px;
   height: auto;
 }
+
+///////////
+// Event //
+///////////
+
+.event {
+  @include box;
+}
