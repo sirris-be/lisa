@@ -45,7 +45,7 @@ const populateUpcoming = (document) => {
       for (const event of upcoming) {
         const link = document.createElement("a");
         link.href = event.url;
-        link.textContent = `\u2022\u00A0\u00A0\u00A0${formatDate(event.date)} - ${event.short_title}`;
+        link.textContent = `${formatDate(event.date)} - ${event.short_title}`;
         sidebar.appendChild(link);
       }
     }
