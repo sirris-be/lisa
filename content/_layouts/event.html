@@ -5,7 +5,58 @@
     {% include header.html %} {% include sidebar.html %}
     <main>
       <h1>{{ page.title }}</h1>
-      {{ content }}
+      {% if page.link %}
+      <div>
+        <strong>Website:</strong>
+        <span
+          ><a href="{{ page.link }}" target="_blank">{{ page.link }}</a></span
+        >
+      </div>
+      {% endif %} {% if page.date %}
+      <div>
+        <strong>Date:</strong>
+        <span>{{ page.date | date: "%B %d, %Y" }}</span>
+      </div>
+      {% endif %} {% if page.registration %}
+      <div>
+        <strong>Registration:</strong>
+        <span>{{ page.registration }}</span>
+      </div>
+      {% endif %} {% if page.time %}
+      <div>
+        <strong>Time:</strong>
+        <span>From {{ page.time.from }} to {{ page.time.to }}</span>
+      </div>
+      {% endif %} {% if page.venue %}
+      <div>
+        <strong>Venue:</strong>
+        <span>{{ page.venue.name }}</span>
+      </div>
+      <div>
+        <strong>Address:</strong>
+        <span>{{ page.venue.address }}</span>
+      </div>
+      {% endif %} {% if page.remote %}
+      <div>
+        <strong>Remote:</strong>
+        <a href="{{ page.remote.link }}" target="_blank"
+          >{{ page.remote.name }}</a
+        >
+      </div>
+      {% endif %} {% if page.requirements and page.requirements.size > 0 %}
+      <div>
+        <strong>Requirements:</strong>
+        {% if page.requirements.size == 1 %}
+        <span>{{ page.requirements[0] }}</span>
+        {% else %}
+        <ul>
+          {% for req in page.requirements %}
+          <li>{{ req }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endif %} {{ content }}
     </main>
     {% include footer.html %}
   </body>
