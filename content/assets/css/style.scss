@@ -225,3 +225,20 @@ nav a {
   width: 100px;
   height: auto;
 }
+
+////////////////////
+// Advisory Board //
+////////////////////
+
+.company {
+  @include box;
+  display: flex;
+  flex-direction: row;
+  gap: $small-gap;
+  align-items: center;
+}
+
+.company img {
+  width: 100px;
+  height: auto;
+}
