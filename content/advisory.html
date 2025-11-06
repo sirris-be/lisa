@@ -1,0 +1,13 @@
+---
+title: The People Behind LISA
+layout: page
+---
+
+<h1>LISA's Advisory Board</h1>
+
+{% for company in site.data.advisory %}
+<a class="company" href="{{ company.link }}" target="_blank">
+  <img src="/assets/img/logo/{{ company.logo }}" alt="{{ company.name }}" />
+  <div>{{ company.moto }}</div>
+  {% endfor %}
+</a>
