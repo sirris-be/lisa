@@ -13,4 +13,4 @@ EXPOSE 4000
 RUN gem install jekyll bundler webrick
 
 # Command to serve the site with live reload
-CMD ["jekyll", "serve", "--watch", "--force_polling", "--host", "0.0.0.0"]
+CMD ["jekyll", "serve", "--source", "docs", "--watch", "--force_polling", "--host", "0.0.0.0"]
