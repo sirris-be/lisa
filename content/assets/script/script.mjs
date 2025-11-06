@@ -30,10 +30,6 @@ const today = toMidnightStamp(new Date());
 const setActiveNav = (document) => {
   const links = Array.from(document.querySelectorAll("nav a"));
   for (const link of links) {
-    console.log({
-      href: link.href,
-      location: window.location.href,
-    });
     if (link.href === window.location.href) {
       link.classList.add("current");
     }
