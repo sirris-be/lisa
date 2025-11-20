@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "checkJs": true,
+    "strict": true,
+    "rootDir": "lib",
+    "noEmit": true,
+    "moduleResolution": "nodenext",
+    "target": "esnext"
+  },
+  "include": ["lib/**/*.mjs"]
+}

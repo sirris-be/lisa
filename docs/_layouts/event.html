@@ -17,15 +17,23 @@
         <strong>Date:</strong>
         <span>{{ page.date | date: "%B %d, %Y" }}</span>
       </div>
-      {% endif %} {% if page.registration %}
-      <div>
-        <strong>Registration:</strong>
-        <span>{{ page.registration }}</span>
-      </div>
       {% endif %} {% if page.time %}
       <div>
         <strong>Time:</strong>
         <span>From {{ page.time.from }} to {{ page.time.to }}</span>
+      </div>
+      <div>
+        <strong>Calendar Event:</strong>
+        <span
+          ><a href="/assets/ics/{{ page.uid }}.ics" target="_blank"
+            >Download ICS</a
+          ></span
+        >
+      </div>
+      {% endif %} {% if page.registration %}
+      <div>
+        <strong>Registration:</strong>
+        <span>{{ page.registration }}</span>
       </div>
       {% endif %} {% if page.venue %}
       <div>

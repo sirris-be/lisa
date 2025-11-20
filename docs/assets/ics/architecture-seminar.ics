@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//Workshop Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:architecture-seminar@lisa-ai.com
+SUMMARY:Seminar on Architecture and Testability of AI Applications
+DTSTART;TZID=Europe/Brussels:20251216T130000
+DTEND;TZID=Europe/Brussels:20251216T140000
+URL:https://lisa-ai.be/events/2025-12-16-architecture-seminar.html
+END:VEVENT
+END:VCALENDAR

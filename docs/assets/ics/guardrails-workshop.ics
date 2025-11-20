@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//Workshop Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:guardrails-workshop@lisa-ai.com
+SUMMARY:Workshop on Hacking LLM Guardrails
+DTSTART;TZID=Europe/Brussels:20251203T090000
+DTEND;TZID=Europe/Brussels:20251203T123000
+LOCATION:Lamot Congress Center, Van Beethovenstraat 8/10, 2800 Mechelen
+URL:https://lisa-ai.be/events/2025-12-03-guardrails-workshop.html
+END:VEVENT
+END:VCALENDAR
