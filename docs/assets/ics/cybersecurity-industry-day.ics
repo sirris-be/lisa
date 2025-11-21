@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//lisa-ai.be//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cybersecurity-industry-day@lisa-ai.be
+SUMMARY:Cybersecurity Industry Day
+DTSTART;TZID=Europe/Brussels:20251113T120000
+DTEND;TZID=Europe/Brussels:20251113T190000
+LOCATION:Lamot Conference and Heritage Center, Van Beethovenstraat 8/10, 2800 Mechelen
+URL:https://lisa-ai.be/events/2025-11-13-cybersecurity-industry-day.html
+END:VEVENT
+END:VCALENDAR

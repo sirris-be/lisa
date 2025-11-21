@@ -8,12 +8,18 @@ export type Time = {
   to: string;
 };
 
+export type Remote = {
+  name: string;
+  link: string;
+};
+
 export type EventFrontmatter = {
   layout: "event";
   uid: string;
   title: string;
   short_title: string;
   venue: null | Venue;
+  remote: null | Remote;
   link: null | string;
   time: null | Time;
 };

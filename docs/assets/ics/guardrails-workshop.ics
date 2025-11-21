@@ -1,10 +1,10 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Your Organization//Workshop Calendar//EN
+PRODID:-//lisa-ai.be//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:guardrails-workshop@lisa-ai.com
+UID:guardrails-workshop@lisa-ai.be
 SUMMARY:Workshop on Hacking LLM Guardrails
 DTSTART;TZID=Europe/Brussels:20251203T090000
 DTEND;TZID=Europe/Brussels:20251203T123000
