@@ -2,7 +2,7 @@ title: LISA
 email: laurent.christophe@sirris.be
 description: Homepage of the LISA Research Project
 baseurl: ""
-url: "https://sirris-be.github.io/lisa"
+url: "https://lisa-ai.be"
 
 source: content
 
@@ -21,3 +21,7 @@ future: true
 collections:
   events:
     output: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
