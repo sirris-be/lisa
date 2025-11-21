@@ -17,10 +17,10 @@
         <strong>Date:</strong>
         <span>{{ page.date | date: "%B %d, %Y" }}</span>
       </div>
-      {% endif %} {% if page.time %}
+      {% endif %} {% if page.duration %}
       <div>
         <strong>Time:</strong>
-        <span>From {{ page.time.from }} to {{ page.time.to }}</span>
+        <span>From {{ page.duration.from }} to {{ page.duration.to }}</span>
       </div>
       <div>
         <strong>Calendar Event:</strong>
