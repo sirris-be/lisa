@@ -18,10 +18,10 @@ export type EventFrontmatter = {
   uid: string;
   title: string;
   short_title: string;
-  venue: null | Venue;
-  remote: null | Remote;
-  link: null | string;
-  time: null | Time;
+  venue?: Venue;
+  remote?: Remote;
+  link?: string;
+  time?: Time;
 };
 
 export type File = {
