@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<h1>Resource Documentation</h1>
+
+{% for resource in site.data.resources %}
+<a class="resource" href="{{ resource.link }}" target="_blank">
+  <div>
+    <div>{{ resource.author }}</div>
+    <div>{{ resource.title }}</div>
+    <div>{{ resource.summary }}</div>
+  </div>
+  {% endfor %}
+</a>

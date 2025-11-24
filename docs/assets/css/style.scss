@@ -267,3 +267,21 @@ nav a {
 .event > a {
   @include link;
 }
+
+//////////////
+// Resource //
+//////////////
+
+.resource {
+  @include box;
+  display: flex;
+  flex-direction: row;
+  gap: $small-gap;
+  align-items: center;
+}
+
+.resource div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
