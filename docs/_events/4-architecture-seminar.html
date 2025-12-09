@@ -1,8 +1,8 @@
 ---
 layout: event
 date: 2025-12-16
-title: Seminar on Architecture and Testability of AI Applications
-short_title: Seminar on Testability
+title: Webinar on Observability of AI-based Applications
+short_title: Webinar on Observability
 duration:
   from: "13:00"
   to: "14:00"
@@ -12,8 +12,48 @@ remote:
 ---
 
 <p>
-  This seminar examines the foundations involved in designing and evaluating AI
-  applications. It discusses how architectural choices can influence system
-  behavior and touches on general approaches to assess the reliability and
-  consistency of AI-driven components.
+  Testing during development has long been the de facto standard for ensuring
+  software quality. This approach works well for systems that deterministically
+  process structured data. With generative AI (large language models in
+  particular) software can now handle unstructured data, often in a
+  non-deterministic way. This shift makes it harder to guarantee quality during
+  development. Hence, the need to incorporate observability in production, which
+  is the focus of this webinar.
 </p>
+
+<p>
+  Participants gain an understanding of state-of-the-art approaches to
+  monitoring AI-based software. In particular, the webinar will explore the
+  following aspects:
+</p>
+<ul>
+  <li>
+    Evals: Currently considered best practice for specifying the expected
+    behavior of AI-based software. They go beyond simple unit tests to handle
+    unstructured data and non-deterministic outputs.
+  </li>
+  <li>
+    Debugging: Observability is not only about detecting failures but also about
+    providing valuable information to fix them. For example, agentic systems may
+    produce unexpected task decompositions or autonomously follow erroneous
+    workflows.
+  </li>
+  <li>
+    Cost monitoring: Prompting LLMs in the cloud can quickly become expensive.
+    Monitoring usage helps identify opportunities to reduce costs.
+  </li>
+  <li>
+    Latency monitoring: Whether running in the cloud or on-premise, latency can
+    impact time-sensitive tasks, especially when multiple prompts are required.
+  </li>
+</ul>
+
+<p>The webinar will feature three main parts:</p>
+<ol>
+  <li>20 min: General introduction to observability of AI-based software</li>
+  <li>
+    20 min: Demonstration of LangFuse by Lotte, Developer Relations Engineer at
+    LangFuse.
+  </li>
+  <li>20 min: Q&A and live discussion</li>
+</ol>
