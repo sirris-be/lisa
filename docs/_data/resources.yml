@@ -2,3 +2,7 @@
   title: Evasion Attacks on LLMs - Countermeasures in Practice
   author: Federal Office for Information Security
   summary: A Guide to face Prompt Injections, Jailbreaks and Adversarial Attacks
+- link: https://lisa.pieterp.be/2025-12-16-Testability_of_AI.mp4
+  title: Architecture and Testability of AI Applications
+  author: LISA Online Webinar
+  summary: Testing during development has long been the de facto standard for ensuring software quality. This approach works well for systems that deterministically process structured data. With generative AI - large language models in particular - software can now handle unstructured data, often in a non-deterministic way. This shift makes it harder to guarantee quality during development. Hence, the need to incorporate observability in production, which is the focus of this webinar.
