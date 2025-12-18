@@ -56,8 +56,6 @@ a {
 }
 
 html {
-  width: 100%;
-  height: 100%;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
     sans-serif;
@@ -75,7 +73,7 @@ header {
 
 footer {
   width: 100%;
-  padding-left: $small-gap;
+  padding: $tiny-gap;
   background-image: linear-gradient(to top right, $light-theme, $dark-theme);
   display: flex;
   align-items: center;
@@ -138,6 +136,7 @@ main {
   main {
     padding-left: $small-gap;
     padding-right: $small-gap;
+    flex-grow: 1;
   }
 }
 
