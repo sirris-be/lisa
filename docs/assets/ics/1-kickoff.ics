@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:1-kickoff@lisa-ai.be
 SUMMARY:Kickoff Meeting for LISA 2025 Activities
-DTSTAMP:20251218T083258Z
+DTSTAMP:20251218T123719Z
 DTSTART;TZID=Europe/Brussels:20250611T130000
 DTEND;TZID=Europe/Brussels:20250611T170000
 URL:https://lisa-ai.be/events/1-kickoff.html
