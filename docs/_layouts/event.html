@@ -62,9 +62,24 @@
           <li>{{ req }}</li>
           {% endfor %}
         </ul>
-        {% endif %}
+        {% endif %} {% endif %} {% if page.recording %}
+        <div>
+          <strong>Recording:</strong>
+          <span
+            ><a href="{{ page.recording }}" target="_blank"
+              >Download video</a
+            ></span
+          >
+        </div>
       </div>
-      {% endif %} {{ content }}
+      {% endif %} {{ content }} {% if page.recording %}
+      <div>
+        <video controls width="100%">
+          <source src="{{ page.recording }}" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      {% endif %}
     </main>
     {% include footer.html %}
   </body>
