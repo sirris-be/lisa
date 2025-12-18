@@ -71,18 +71,11 @@ body {
 
 header {
   width: 100%;
-  background-image:
-    url("/assets/img/lisa-flip.png"),
-    linear-gradient(to top right, $light-theme, $dark-theme);
-  background-size: auto 100%;
-  background-position: left center;
-  background-repeat: no-repeat;
 }
 
 footer {
   width: 100%;
   padding-left: $small-gap;
-  height: $footer-height;
   background-image: linear-gradient(to top right, $light-theme, $dark-theme);
   display: flex;
   align-items: center;
@@ -127,7 +120,11 @@ main {
     overflow: auto;
   }
   header {
-    min-height: $header-height;
+    background-image: linear-gradient(to top right, $light-theme, $dark-theme);
+  }
+  nav {
+    padding: $large-gap;
+    flex-wrap: wrap;
   }
   body {
     display: flex;
@@ -151,9 +148,20 @@ main {
   }
   header {
     height: $header-height;
+    background-image:
+      url("/assets/img/lisa-flip.png"),
+      linear-gradient(to top right, $light-theme, $dark-theme);
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     z-index: 10;
+  }
+  nav {
+    margin-right: $huge-gap;
+    justify-content: flex-end;
+    height: 100%;
   }
   aside {
     width: $aside-width;
@@ -181,13 +189,10 @@ main {
 ////////////
 
 nav {
-  margin-right: $huge-gap;
   display: flex;
   gap: $large-gap;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  height: 100%;
 }
 
 nav a {
