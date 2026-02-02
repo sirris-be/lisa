@@ -6,3 +6,11 @@
   title: Observability of AI-based Applications
   author: LISA Online Webinar
   summary: Testing during development has long been the de facto standard for ensuring software quality. This approach works well for systems that deterministically process structured data. With generative AI - large language models in particular - software can now handle unstructured data, often in a non-deterministic way. This shift makes it harder to guarantee quality during development. Hence, the need to incorporate observability in production, which is the focus of this webinar.
+- link: https://lisa.pieterp.be/2026-01-30-What_agentic_AI_taught_us.mp4
+  title: What agentic AI taught us
+  author: LISA Online Webinar
+  summary: Agentic AI has huge potential, but most AI projects never make it past the demo stage—something a recent MIT study makes painfully clear. This talk looks at why that happens and what it takes to design agentic architectures that hold up in the real world, with explicit attention to architecture, testing, clear ownership, change management, and day-to-day operations. Close collaboration with the customer remains key. Building agentic AI together as a system that can evolve over time, rather than handing over a black box and walking away, is essential to getting it into production and keeping it there.
+- link: https://lisa.pieterp.be/2026-01-30-Building_a_Customer-Facing_Conversational_Interface.mp4
+  title: Building a customer-facing conversational interface
+  author: LISA Online Webinar
+  summary: This talk presents two practical examples of conversational interfaces built with large language models. The first is a customer-facing assistant for an appliance repair company that answers questions, provides troubleshooting help, and schedules appointments using multilingual normalization, intent detection, and structured prompting. The second showcases an on-site assistant for nuclear engineers that converts unstructured technical documents into a semantic knowledge graph, enabling fast, accurate, and traceable answers for real operational use.
