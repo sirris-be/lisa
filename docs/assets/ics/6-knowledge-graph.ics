@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//lisa-ai.be//event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6-knowledge-graph@lisa-ai.be
+SUMMARY:Advanced Context Engineering with Knowledge Graphs
+DTSTAMP:20260223T095650Z
+DTSTART;TZID=Europe/Brussels:20260306T130000
+DTEND;TZID=Europe/Brussels:20260306T140000
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTk5YmI3MDQtYTFkOC00Mzk4LWFhYmMtMWU3NjA3ZjM5OTU0%40thread.v2/0?context=%7b%22Tid%22%3a%22d4c1d712-e8c2-4fdf-abce-18805891b5b0%22%2c%22Oid%22%3a%22b131c3f0-f2ad-4966-9bd8-2e41122d59c3%22%7d
+URL:https://lisa-ai.be/events/6-knowledge-graph.html
+END:VEVENT
+END:VCALENDAR

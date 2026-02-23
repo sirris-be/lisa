@@ -6,10 +6,9 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:5-case-study-webinar@lisa-ai.be
 SUMMARY:Webinar on Agentic Systems and Conversational Assistants
-DTSTAMP:20260114T192530Z
+DTSTAMP:20260223T095650Z
 DTSTART;TZID=Europe/Brussels:20260130T130000
 DTEND;TZID=Europe/Brussels:20260130T140000
-LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MjA3MmE5N2QtNTQ0MS00NjJjLWIzNzQtN2E5MWJjOWVkZTUz%40thread.v2/0?context=%7b%22Tid%22%3a%22d4c1d712-e8c2-4fdf-abce-18805891b5b0%22%2c%22Oid%22%3a%22b131c3f0-f2ad-4966-9bd8-2e41122d59c3%22%7d
 URL:https://lisa-ai.be/events/5-case-study-webinar.html
 END:VEVENT
 END:VCALENDAR

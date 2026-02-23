@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:4-observability-seminar@lisa-ai.be
 SUMMARY:Webinar on Observability of AI-based Applications
-DTSTAMP:20260114T192530Z
+DTSTAMP:20260223T095650Z
 DTSTART;TZID=Europe/Brussels:20251216T130000
 DTEND;TZID=Europe/Brussels:20251216T140000
 URL:https://lisa-ai.be/events/4-observability-seminar.html

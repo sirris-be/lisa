@@ -1,0 +1,71 @@
+---
+layout: event
+date: 2026-03-06
+title: "Advanced Context Engineering with Knowledge Graphs"
+short_title: "Webinar: Knowledge Graphs"
+duration:
+  from: "13:00"
+  to: "14:00"
+remote:
+  name: Teams
+  link: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTk5YmI3MDQtYTFkOC00Mzk4LWFhYmMtMWU3NjA3ZjM5OTU0%40thread.v2/0?context=%7b%22Tid%22%3a%22d4c1d712-e8c2-4fdf-abce-18805891b5b0%22%2c%22Oid%22%3a%22b131c3f0-f2ad-4966-9bd8-2e41122d59c3%22%7d"
+---
+
+<p>
+  As we all know, the answer of an LLM is as good as the context it is provided
+  with. If the information is not present in the context, the LLM is likely to
+  hallucinate an answer which is that more dangerous that it is plausible. With
+  the recent increase to the context windows, it might be tempting to solve this
+  issue by dumping large amounts of information into the context. But this is
+  ill-advised for two reasons:
+</p>
+<ul>
+  <li>Billing will raise because of the increase of input tokens.</li>
+  <li>
+    The LLM will oftentimes get confused if the relevant information is drowned
+    in noise.
+  </li>
+</ul>
+
+<p>
+  Hence, context engineering should be considered the bedrock of reliable
+  LLM-based applications. The most well-known approach consists of maintaining a
+  flat list of information chunks. This list is then embedded into vectors to
+  perform semantic matching for context retrieval. The topic of this webinar is
+  how to leverage a more structured way of representing information for context
+  retrieval.
+</p>
+
+<p>
+  We believe that knowledge graphs offer a valuable approach in this respect. A
+  knowledge graph is a structured representation of information where entities
+  (such as people, places, or concepts) are connected by relationships, forming
+  a graph that encodes meaning. For instance:
+</p>
+
+<pre>
+(Marie Curie) -- won -- (Nobel Prize)
+</pre>
+
+<p>The webinar will feature three presentations and include time for Q&A:</p>
+<ol>
+  <li>
+    Laurent Christophe (<a href="https://www.sirris.be">Sirris</a>) will give a
+    brief overview of what knowledge graphs are, how they can be populated and
+    how they can be queried.
+  </li>
+  <li>
+    Aziz Nebli (<a href="https://www.sirris.be">Sirris</a>) will make a brief
+    deep dive into a real world example of knowledge graph used for a
+    conversational interface.
+  </li>
+  <li>
+    Semantic Context for Agents - Carlos Noguera (<a href="https://logic.tools"
+      >Logic.Tools</a
+    >): In this talk, Carlos will introduce OWL Ontologies as a way to describe
+    a knowledge graph. Ontologies are an expressive language with which to model
+    the information contained in nodes and edges of a KG. Furthermore, Carlos
+    will demo how ontology-augmented KGs, when coupled with a reasoning engine
+    like Logic.Tools's, provide rich, semantic context to conversational agents.
+  </li>
+</ol>
