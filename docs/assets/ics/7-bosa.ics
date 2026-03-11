@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//lisa-ai.be//event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7-bosa@lisa-ai.be
+SUMMARY:Navigating the security and privacy landscape of modern AI / In the trenches: cybersecurity of AI agents
+DTSTAMP:20260311T134618Z
+DTSTART;TZID=Europe/Brussels:20260318T140000
+DTEND;TZID=Europe/Brussels:20260318T160000
+LOCATION:https://www.youtube.com/watch?v=sClg2u1S80I&list=PLbeal6jKXh6eeRMRgCOpHQo9W1q1nuROj&index=9
+URL:https://bosa.belgium.be/en/events/eu-ai-week-2026-shaping-eu-ai-sovereignty
+END:VEVENT
+END:VCALENDAR
