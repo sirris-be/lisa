@@ -1,13 +1,30 @@
 ---
-title: The People Behind LISA
+title: LISA Advisory Board
 layout: page
 ---
 
-<h1>LISA's Advisory Board</h1>
+<section class="page-hero page-hero-compact">
+  <p class="eyebrow">Advisory Board</p>
+  <h1>Companies shaping the project from the field</h1>
+  <p class="lede">
+    Industry members bringing operational feedback, product pressure, and
+    adoption constraints into the research loop.
+  </p>
+</section>
 
-{% for company in site.data.advisory %}
-<a class="company" href="{{ company.link }}" target="_blank">
-  <img src="/assets/img/logo/{{ company.logo }}" alt="{{ company.name }}" />
-  <div>{{ company.moto }}</div>
+<section class="company-grid">
+  {% for company in site.data.advisory %}
+  <a
+    class="company-card"
+    href="{{ company.link }}"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img src="/assets/img/logo/{{ company.logo }}" alt="{{ company.name }}" />
+    <div>
+      <h2>{{ company.name }}</h2>
+      <p>{{ company.moto }}</p>
+    </div>
+  </a>
   {% endfor %}
-</a>
+</section>

@@ -38,23 +38,51 @@ const setActiveNav = (document) => {
 
 const populateUpcoming = (document) => {
   const upcoming = events.filter(
-    (event) => parseDate(event.date).getTime() >= today
+    (event) => parseDate(event.date).getTime() >= today,
   );
-  if (upcoming.length > 0) {
-    const sidebar = document.getElementById("sidebar");
-    {
-      const title = document.createElement("h3");
-      title.textContent = "Upcoming Events:";
-      sidebar.appendChild(title);
-    }
-    {
-      for (const event of upcoming) {
-        const link = document.createElement("a");
-        link.href = event.url;
-        link.textContent = `${formatDate(event.date)} - ${event.short_title}`;
-        sidebar.appendChild(link);
-      }
-    }
+  const sidebar = document.getElementById("sidebar");
+  if (!sidebar) {
+    return;
+  }
+
+  const title = document.createElement("p");
+  title.className = "eyebrow";
+  title.textContent = "Upcoming";
+  sidebar.appendChild(title);
+
+  const heading = document.createElement("h2");
+  heading.textContent =
+    upcoming.length > 0
+      ? "Next sessions on the calendar"
+      : "More sessions soon";
+  sidebar.appendChild(heading);
+
+  if (upcoming.length === 0) {
+    const empty = document.createElement("p");
+    empty.textContent =
+      "New workshops and webinars will appear here once they are announced.";
+    sidebar.appendChild(empty);
+    return;
+  }
+
+  const list = document.createElement("div");
+  list.className = "rail-event-list";
+  sidebar.appendChild(list);
+
+  for (const event of upcoming.slice(0, 4)) {
+    const link = document.createElement("a");
+    link.className = "rail-event";
+    link.href = event.url;
+
+    const date = document.createElement("span");
+    date.className = "rail-event-date";
+    date.textContent = formatDate(event.date);
+
+    const name = document.createElement("strong");
+    name.textContent = event.short_title;
+
+    link.append(date, name);
+    list.appendChild(link);
   }
 };
 

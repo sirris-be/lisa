@@ -1,86 +1,97 @@
 <!doctype html>
 <html lang="en">
   {% include head.html %}
-  <body>
-    {% include header.html %} {% include sidebar.html %}
-    <main>
-      <h1>{{ page.title }}</h1>
-      {% if page.link %}
-      <div>
-        <strong>Website:</strong>
-        <span
-          ><a href="{{ page.link }}" target="_blank">{{ page.link }}</a></span
-        >
-      </div>
-      {% endif %} {% if page.date %}
-      <div>
-        <strong>Date:</strong>
-        <span>{{ page.date | date: "%B %d, %Y" }}</span>
-      </div>
-      {% endif %} {% if page.duration %}
-      <div>
-        <strong>Time:</strong>
-        <span>From {{ page.duration.from }} to {{ page.duration.to }}</span>
-      </div>
-      <div>
-        <strong>Calendar Event:</strong>
-        <span
-          ><a href="/assets/ics/{{ page.slug }}.ics" target="_blank"
-            >Download ICS</a
-          ></span
-        >
-      </div>
-      {% endif %} {% if page.registration %}
-      <div>
-        <strong>Registration:</strong>
-        <span>{{ page.registration }}</span>
-      </div>
-      {% endif %} {% if page.venue %}
-      <div>
-        <strong>Venue:</strong>
-        <span>{{ page.venue.name }}</span>
-      </div>
-      <div>
-        <strong>Address:</strong>
-        <span>{{ page.venue.address }}</span>
-      </div>
-      {% endif %} {% if page.remote %}
-      <div>
-        <strong>Remote:</strong>
-        <a href="{{ page.remote.link }}" target="_blank"
-          >{{ page.remote.name }}</a
-        >
-      </div>
-      {% endif %} {% if page.requirements and page.requirements.size > 0 %}
-      <div>
-        <strong>Requirements:</strong>
-        {% if page.requirements.size == 1 %}
-        <span>{{ page.requirements[0] }}</span>
-        {% else %}
-        <ul>
-          {% for req in page.requirements %}
-          <li>{{ req }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {% endif %} {% if page.recording %}
-        <div>
-          <strong>Recording:</strong>
-          <span
-            ><a href="{{ page.recording }}" target="_blank"
+  <body class="site-body">
+    {% include header.html %}
+    <div class="page-frame">
+      <main class="page-main event-main">
+        <section class="page-hero event-hero">
+          <p class="eyebrow">Event</p>
+          <h1>{{ page.title }}</h1>
+          {% if page.date or page.duration or page.venue or page.remote %}
+          <div class="meta-strip">
+            {% if page.date %}
+            <span>{{ page.date | date: "%B %d, %Y" }}</span>
+            {% endif %} {% if page.duration %}
+            <span>{{ page.duration.from }} to {{ page.duration.to }}</span>
+            {% endif %} {% if page.venue %}
+            <span>{{ page.venue.name }}</span>
+            {% endif %} {% if page.remote %}
+            <span>{{ page.remote.name }}</span>
+            {% endif %}
+          </div>
+          {% endif %}
+        </section>
+
+        <section class="info-grid">
+          {% if page.link %}
+          <article class="info-card">
+            <p class="eyebrow">Website</p>
+            <a href="{{ page.link }}" target="_blank" rel="noreferrer"
+              >Open event page</a
+            >
+          </article>
+          {% endif %} {% if page.duration %}
+          <article class="info-card">
+            <p class="eyebrow">Calendar</p>
+            <a href="/assets/ics/{{ page.slug }}.ics" target="_blank"
+              >Download ICS</a
+            >
+          </article>
+          {% endif %} {% if page.registration %}
+          <article class="info-card">
+            <p class="eyebrow">Registration</p>
+            <p>{{ page.registration }}</p>
+          </article>
+          {% endif %} {% if page.venue %}
+          <article class="info-card">
+            <p class="eyebrow">Venue</p>
+            <p>{{ page.venue.name }}</p>
+            <p>{{ page.venue.address }}</p>
+          </article>
+          {% endif %} {% if page.remote %}
+          <article class="info-card">
+            <p class="eyebrow">Remote Access</p>
+            <a href="{{ page.remote.link }}" target="_blank" rel="noreferrer"
+              >{{ page.remote.name }}</a
+            >
+          </article>
+          {% endif %} {% if page.requirements and page.requirements.size > 0 %}
+          <article class="info-card">
+            <p class="eyebrow">Requirements</p>
+            {% if page.requirements.size == 1 %}
+            <p>{{ page.requirements[0] }}</p>
+            {% else %}
+            <ul>
+              {% for req in page.requirements %}
+              <li>{{ req }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </article>
+          {% endif %} {% if page.recording %}
+          <article class="info-card">
+            <p class="eyebrow">Recording</p>
+            <a href="{{ page.recording }}" target="_blank" rel="noreferrer"
               >Download video</a
-            ></span
-          >
-        </div>
-      </div>
-      {% endif %} {{ content }} {% if page.recording %}
-      <div>
-        <video controls width="100%">
-          <source src="{{ page.recording }}" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      {% endif %}
-    </main>
+            >
+          </article>
+          {% endif %}
+        </section>
+
+        <section class="prose">{{ content }}</section>
+
+        {% if page.recording %}
+        <section class="media-card">
+          <video controls width="100%">
+            <source src="{{ page.recording }}" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+        {% endif %}
+      </main>
+      {% include sidebar.html %}
+    </div>
     {% include footer.html %}
   </body>
 </html>

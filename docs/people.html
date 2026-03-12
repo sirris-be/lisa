@@ -2,15 +2,30 @@
 layout: page
 ---
 
-<h1>The People Behind LISA</h1>
+<section class="page-hero page-hero-compact">
+  <p class="eyebrow">People</p>
+  <h1>The team behind LISA</h1>
+  <p class="lede">
+    Researchers and advisors from KU Leuven DistriNet and Sirris driving the
+    project's technical agenda.
+  </p>
+</section>
 
-{% for person in site.data.people %}
-<a class="person" href="{{ person.link }}" target="_blank">
-  <img src="{{ person.photo }}" alt="{{ person.name }}" />
-  <div>
-    <div>{{ person.name }}</div>
-    <div>{{ person.role }}</div>
-    <div>{{ person.org }}</div>
-  </div>
+<section class="people-grid">
+  {% for person in site.data.people %}
+  <a
+    class="person-card"
+    href="{{ person.link }}"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+    <div>
+      <p class="eyebrow">{{ person.org }}</p>
+      <h2>{{ person.name }}</h2>
+      <p>{{ person.role }}</p>
+      <span>{{ person.email }}</span>
+    </div>
+  </a>
   {% endfor %}
-</a>
+</section>

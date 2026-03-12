@@ -2,14 +2,26 @@
 layout: page
 ---
 
-<h1>Resource Documentation</h1>
+<section class="page-hero page-hero-compact">
+  <p class="eyebrow">Resources</p>
+  <h1>Reference material from the project and its events</h1>
+  <p class="lede">
+    Slides, recordings, and reference documents related to LISA themes and
+    events.
+  </p>
+</section>
 
-{% for resource in site.data.resources %}
-<a class="resource" href="{{ resource.link }}" target="_blank">
-  <div>
-    <div>{{ resource.author }}</div>
-    <div><strong>{{ resource.title }}</strong></div>
-    <div>{{ resource.summary }}</div>
-  </div>
+<section class="resource-grid">
+  {% for resource in site.data.resources %}
+  <a
+    class="resource-card"
+    href="{{ resource.link }}"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <p class="eyebrow">{{ resource.author }}</p>
+    <h2>{{ resource.title }}</h2>
+    <p>{{ resource.summary }}</p>
+  </a>
   {% endfor %}
-</a>
+</section>
