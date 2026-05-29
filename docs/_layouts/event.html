@@ -69,25 +69,42 @@
             </ul>
             {% endif %}
           </article>
-          {% endif %} {% if page.recording %}
+          {% endif %} {% if page.recordings and page.recordings.size > 0 %}
           <article class="info-card">
+            {% if page.recordings.size == 1 %}
             <p class="eyebrow">Recording</p>
-            <a href="{{ page.recording }}" target="_blank" rel="noreferrer"
-              >Download video</a
+            {% assign recording = page.recordings[0] %}
+            <a href="{{ recording.url }}" target="_blank" rel="noreferrer"
+              >{{ recording.title }}</a
             >
+            {% else %}
+            <p class="eyebrow">Recordings</p>
+            <ul>
+              {% for recording in page.recordings %}
+              <li>
+                <a href="{{ recording.url }}" target="_blank" rel="noreferrer"
+                  >{{ recording.title }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
           </article>
           {% endif %}
         </section>
 
         <section class="prose">{{ content }}</section>
 
-        {% if page.recording %}
+        {% if page.recordings and page.recordings.size > 0 %}
+        {% for recording in page.recordings %}
         <section class="media-card">
+          <h2>{{ recording.title }}</h2>
           <video controls width="100%">
-            <source src="{{ page.recording }}" type="video/mp4" />
+            <source src="{{ recording.url }}" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </section>
+        {% endfor %}
         {% endif %}
       </main>
       {% include sidebar.html %}

@@ -16,6 +16,11 @@ export type Remote = {
   link: string;
 };
 
+export type Recording = {
+  title: string;
+  url: string;
+};
+
 // @TJS-pattern ^\d{4}-\d{2}-\d{2}$
 export type Date = string;
 
@@ -28,6 +33,7 @@ export type EventFrontmatter = {
   venue?: Venue;
   remote?: Remote;
   link?: string;
+  recordings?: Recording[];
 };
 
 export type File = {
