@@ -14,3 +14,11 @@
   title: Building a customer-facing conversational interface
   author: LISA Online Webinar
   summary: This talk presents two practical examples of conversational interfaces built with large language models. The first is a customer-facing assistant for an appliance repair company that answers questions, provides troubleshooting help, and schedules appointments using multilingual normalization, intent detection, and structured prompting. The second showcases an on-site assistant for nuclear engineers that converts unstructured technical documents into a semantic knowledge graph, enabling fast, accurate, and traceable answers for real operational use.
+- link: https://lisa.pieterp.be/2026-03-06-Advanced_RAG_with_Knowledge_Graphs.mp4
+  title: Advanced RAG with Knowledge Graphs
+  author: LISA Online Webinar
+  summary: An introduction to using knowledge graphs for advanced retrieval-augmented generation, including how graph-based information can be populated and queried to provide structured, relevant context to conversational assistants.
+- link: https://lisa.pieterp.be/2026-03-06-Semantic_Context_for_Agents_Using_Ontologies.mp4
+  title: Semantic Context for Agents Using Ontologies
+  author: LISA Online Webinar
+  summary: Carlos Noguera introduces OWL ontologies as an expressive way to model knowledge graphs and demonstrates how ontology-augmented graphs and reasoning engines can provide rich semantic context to conversational agents.
