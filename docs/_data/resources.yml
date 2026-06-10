@@ -2,6 +2,14 @@
   title: Evasion Attacks on LLMs - Countermeasures in Practice
   author: Federal Office for Information Security
   summary: A Guide to face Prompt Injections, Jailbreaks and Adversarial Attacks
+- link: assets/doc/kickoff-slides-distrinet.pdf
+  title: Building Robust and Safe LLM Applications
+  author: LISA Kickoff
+  summary: Technical presentation from the LISA kickoff on building robust and safe applications with large language models.
+- link: assets/doc/guardrails-slides.pdf
+  title: Hacking LLM Guardrails
+  author: LISA Workshop
+  summary: Slides from the hands-on workshop on designing, testing, and bypassing guardrails for large language model applications.
 - link: https://lisa.pieterp.be/2025-12-16-Testability_of_AI.mp4
   title: Observability of AI-based Applications
   author: LISA Online Webinar
