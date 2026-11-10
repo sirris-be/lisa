@@ -6,9 +6,10 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:1-kickoff@lisa-ai.be
 SUMMARY:Kickoff Meeting for LISA 2025 Activities
-DTSTAMP:20260311T134618Z
+DTSTAMP:20261110T115509Z
 DTSTART;TZID=Europe/Brussels:20250611T130000
 DTEND;TZID=Europe/Brussels:20250611T170000
+LOCATION:Department of Computer Science, room 05.152, Celestijnenlaan 200A, 3001 Leuven
 URL:https://lisa-ai.be/events/1-kickoff.html
 END:VEVENT
 END:VCALENDAR

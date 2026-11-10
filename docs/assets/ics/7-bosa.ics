@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:7-bosa@lisa-ai.be
 SUMMARY:Navigating the security and privacy landscape of modern AI / In the trenches: cybersecurity of AI agents
-DTSTAMP:20260311T134618Z
+DTSTAMP:20261110T115509Z
 DTSTART;TZID=Europe/Brussels:20260318T140000
 DTEND;TZID=Europe/Brussels:20260318T160000
 LOCATION:https://www.youtube.com/watch?v=sClg2u1S80I&list=PLbeal6jKXh6eeRMRgCOpHQo9W1q1nuROj&index=9
